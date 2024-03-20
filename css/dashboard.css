@@ -1,0 +1,37 @@
+.row1{
+    background-color: #036;
+}
+.col-md-7 img{
+     border-radius: 50%;
+}
+.row{
+    padding: 10px;
+}
+.col-md-7 b{
+    color: white;
+    margin-left: 10px;
+    font-size: x-large;
+}
+.col-md-5{
+    padding: 10px;
+}
+.col-md-5 b{
+    padding: 5px;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.fa-solid{
+    color: aliceblue;
+    margin-left: 30px;
+}
+.row2{
+    background-color: #fc5185;
+}
+
+.pf{
+    font-size: large;
+}
+.row3{
+    text-align: center;
+}

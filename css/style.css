@@ -1,0 +1,44 @@
+body{
+    background-color: purple !important;
+}
+.col-md-12{
+    display: flex;
+    justify-content: right;
+}
+
+.col-md-6{
+    background-color: aliceblue;
+}
+.row2{
+    padding: 10px;
+}
+.col-md-3{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 40px;
+}
+.bt{
+    width: 80%;
+    margin-top: 40px;
+    background-color: #007bff;
+}
+input{
+    width: 70%;
+}
+
+.top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.jj{
+    border-bottom-left-radius: 10px;
+
+}
+.kk{
+    border-bottom-right-radius: 10px;
+}
+.foo{
+    display: none;
+    box-shadow: 10px;
+}
