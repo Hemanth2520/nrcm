@@ -1,21 +1,21 @@
 .row1{
     background-color: #036;
 }
-.col-md-7 img{
+.col-md-8 img{
      border-radius: 50%;
 }
 .row{
     padding: 10px;
 }
-.col-md-7 b{
+.col-md-8 b{
     color: white;
     margin-left: 10px;
     font-size: x-large;
 }
-.col-md-5{
+.col-md-4{
     padding: 10px;
 }
-.col-md-5 b{
+.col-md-4 b{
     padding: 5px;
     color: black;
     background-color: aliceblue;
@@ -35,3 +35,24 @@
 .row3{
     text-align: center;
 }
+.btn{
+    background-color: orange !important;
+    border: none !important;
+    width: 150px;
+    margin-left: 30px;
+    border-radius: 0% !important;
+}
+.b{
+    width: 900px;
+}
+.dropdown-menu a{
+    text-transform: capitalize;
+}
+.row5 a{
+    text-decoration: none;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
