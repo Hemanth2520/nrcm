@@ -4,7 +4,7 @@ app=Flask(__name__)
 
 # CONNECTING DATABASE
 mydb=pymysql.connect(host="localhost",user="root",password="",database="nrcm")
-
+cursor = mydb.cursor()
 if mydb:
     print("connected")
 else:
@@ -13,7 +13,9 @@ else:
 def login():
     if request.method=="POST":
         roll=request.form["user"]
-        print(roll)
+        cursor.execute("SELECT * FROM users where roll_number='%s'",(roll))
+        data=cursor.fetchone()
+        print(data)
     return render_template("index.html")
 
 @app.route("/dashboard")
