@@ -122,7 +122,7 @@ def edit():
         email=request.form['email']
         try:
             cursor.execute("UPDATE  users SET username=%s,email=%s where id=%s",(username,email,uid))
-            mydb.commit
+            mydb.commit()
             return redirect("/users")
         except:
             return redirect("/users")
@@ -134,7 +134,7 @@ def  deleteUser():
     userid=request.args.get('id')
     try:
         cursor.execute("DELETE FROM users WHERE id= %s ", (userid,))
-        mydb.commit
+        mydb.commit()
         return redirect("/users")
     except Exception as e:
         print(str(e))
