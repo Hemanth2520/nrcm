@@ -1,0 +1,38 @@
+{% extends 'header.html' %}
+{% block content %}
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered table-striped">
+                    <thead> 
+                        <tr>
+                            <th>s.no</th>
+                            <th>Username</th>
+                            <th>Roll</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in users %}
+                        <tr>
+                            <td>{{ loop.index}}</td>
+                            <td>{{ i[1]}}</td>
+                            <td>{{ i[2]}}</td>
+                            <td>{{ i[3]}}</td>
+                            <td>{{ i[4]}}</td>
+                            <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <a href="/editinfo?id={{users[0]}}"  class="btn btn-primary">edit</a><br>
+                                <a href="/deluser?id={{users[0]}}"   class="btn btn-danger" onclick="return confirm('are you sure to delete')">delete</a>
+                                
+                            </div></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                
+{% endblock %}
